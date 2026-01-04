@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Typefont;
+  src: url(fonts/EBGaramond.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.default {
+  --body-color: #1f1f1f;
+  --dashboard-color: rgba(76, 79, 82, 0.959);
+  --typingContainer-color: rgb(59, 59, 59);
+  --correct-color: aqua;
+  --wrong-color: rgb(245, 169, 5);
+}
+.newTheme {
+  --body-color: #7494ea;
+  --dashboard-color: #35ff69;
+  --typingContainer-color: #494947;
+  --font-color: #35ff69;
+  --correct-color: #44ccff;
+  --wrong-color: #ff4242;
+}
+
+body {
+  position: relative;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#author {
+  font-size: large;
+  margin-top: 25px;
+}
+#author::before {
+  content: "~";
+}
+.container {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard {
+  height: 100px;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dashboard-elements {
+  background-color: var(--dashboard-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 29vw;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.main-container {
+  filter: blur(10px);
+  font-family: Typefont;
+  font-variant-ligatures: none;
+  background-color: var(--typingContainer-color);
+  font-size: 69px;
+  color: var(--font-color);
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px 1px rgb(0, 0, 0);
+}
+.footer {
+  text-align: center;
+}
+#reaveal-btn {
+  padding: 10px;
+  font-size: large;
+  border: none;
+  border-radius: 120px;
+  corner-shape: squircle;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 120px;
+  corner-shape: squircle;
+}
+.correct {
+  color: var(--correct-color);
+}
+.wrong {
+  color: var(--wrong-color);
+}
