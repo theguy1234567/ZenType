@@ -75,8 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     authorElem.innerHTML = `ZenType`;
   }
 
-  
-
   removeBlurBtn.addEventListener("click", () => {
     paraContainer.style.filter = "none";
     removeBlurBtn.style.display = "none";
@@ -116,7 +114,11 @@ document.addEventListener("DOMContentLoaded", () => {
       correct_count += 1;
       key_count += 1;
     } else if (event.key === "Backspace") {
-      key_count -= 1;
+      if (key_count === 0) {
+        key_count == 0;
+      } else {
+        key_count -= 1;
+      }
       letter[key_count].classList.remove("wrong", "correct");
     } else if (event.key === "Shift") {
     } else {
