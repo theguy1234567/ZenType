@@ -14,6 +14,8 @@
   --typingContainer-color: rgb(59, 59, 59);
   --correct-color: aqua;
   --wrong-color: rgb(245, 169, 5);
+  --dashboard-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  
 }
 .newTheme {
   --body-color: #7494ea;
@@ -22,6 +24,7 @@
   --font-color: #35ff69;
   --correct-color: #44ccff;
   --wrong-color: #ff4242;
+  --dashboard-shadow: 0px 0px 10px rgba(12, 12, 12, 0.5);
 }
 
 body {
@@ -59,9 +62,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow: 0px 5px 5px;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   width: 29vw;
+  box-shadow: var(--dashboard-shadow);
   padding: 10px;
   border-radius: 10px;
   margin: 10px;

@@ -148,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         correct_count = 0;
         wrong_count = 0;
         para.textContent = "More widom Tomorrow";
+        authorElem.textContent = "Zen"
       }
     }
     console.log(event.key);
